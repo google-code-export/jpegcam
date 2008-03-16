@@ -131,7 +131,7 @@ which sets the default panel "tab" in the settings dialog:
 The Flash movie makes a HTTP POST to your server-side script, using the
 Content-Type 'image/jpeg'.  This is a NON-STANDARD method which is unlike
 submitting a form from a web page.  If you are using PHP, the JPEG data
-will NOT be in the normal $_POST variable.  Instead, you should read it from the special PHP wrapper: 'php://input'.  For example:
+will NOT be in the normal `$_POST` associative array.  Instead, you should read it from the special PHP wrapper: 'php://input'.  For example:
 
 {{{
   $jpeg_data = file_get_contents('php://input');
