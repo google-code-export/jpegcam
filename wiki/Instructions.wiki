@@ -1,0 +1,79 @@
+#summary Introduction and Usage Instructions
+#labels Featured,Phase-Implementation,Phase-Deploy
+
+= Introduction =
+
+JPEGCam is a simple, Javascript and Flash library that allows you to enable
+your users to submit Webcam snapshots to your server in JPEG format.  The
+Flash movie is variable-sized, and has no visible user interface controls.
+All commands sent to the movie are done so from Javascript, so you can
+implement your own look & feel on your site, create your own buttons, and
+tell the Flash movie what to do from your own code.
+
+= Requirements =
+
+  * Javascript-enabled browser
+  * Flash Player 9
+
+= Installation =
+
+(For a working example, see "test.html" in the htdocs folder.)
+
+First, copy the following files to your web server:
+
+  * webcam.js
+  * webcam.swf
+  * shutter.mp3
+
+= Embedding In Your Page =
+
+To use the tool in your page, edit your HTML (or PHP or whatever) and load the JavaScript library:
+
+{{{
+  <script type="text/javascript" src="webcam.js"></script>
+}}}
+
+Next, configure a few settings to taste:
+
+{{{
+<script language="JavaScript">
+	webcam.set_api_url( 'test.php' );
+	webcam.set_quality( 90 ); // JPEG quality (1 - 100)
+	webcam.set_shutter_sound( true ); // play shutter click sound
+</script>
+}}}
+
+Next, load the movie into the page.  If you want to load the movie immediately, 
+simply use `document.write()` as shown below.  If you are designing a DHTML
+application, you can call `webcam.get_html(...)` at any time to dynamically
+populate a DIV or other element after the page is finished loading.
+
+{{{
+<script language="JavaScript">
+	document.write( webcam.get_html(320, 240) );
+</script>
+}}}
+
+Add some controls for sending commands to the movie (see the API documentation for a complete list of commands).
+
+{{{
+<br/><form>
+	<input type=button value="Configure..." onClick="webcam.configure()">
+	&nbsp;&nbsp;&nbsp;
+	<input type=button value="Take Snapshot" onClick="webcam.snap()">
+</form>
+}}}
+
+Finally, add some code for handling the server response:
+
+{{{
+<script language="JavaScript">
+	webcam.set_hook( 'onComplete', 'my_callback_function' );
+	function my_callback_function(response) {
+		alert("Success! PHP returned: " + response);
+	}
+</script>
+}}}
+
+That's it! See the API documentation for a complete list of all the 
+available API calls, and how to write the server-side code.
