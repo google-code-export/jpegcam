@@ -33,7 +33,7 @@ To use the tool in your page, edit your HTML (or PHP or whatever) and load the J
   <script type="text/javascript" src="webcam.js"></script>
 }}}
 
-Next, configure a few settings to taste (see APIDocs for all the available API calls you can make):
+Next, configure a few settings to taste (see [APIDocs] for all the available API calls you can make):
 
 {{{
 <script language="JavaScript">
@@ -54,7 +54,7 @@ populate a DIV or other element after the page is finished loading.
 </script>
 }}}
 
-Add some controls for sending commands to the movie (see APIDocs for a complete list of commands).
+Add some controls for sending commands to the movie (see [APIDocs] for a complete list of commands).
 
 {{{
 <br/><form>
@@ -75,4 +75,4 @@ Finally, add some code for handling the server response:
 </script>
 }}}
 
-That's it! See APIDocs for a complete list of all the available API calls, and how to write the server-side code.
+That's it! See [APIDocs] for a complete list of all the available API calls, and how to write the server-side code.
