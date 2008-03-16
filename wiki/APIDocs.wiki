@@ -1,4 +1,5 @@
 #summary All available API calls and server-side code instructions
+#labels Featured,Phase-Implementation
 
 = Javascript API Calls =
 
