@@ -12,8 +12,13 @@ tell the Flash movie what to do from your own code.
 
 = Requirements =
 
-  * Javascript-enabled browser
-  * Flash Player 9
+  * *Javascript-enabled browser*
+    * Tested on:
+      * Safari 3.0 Mac OS X Leopard
+      * Firefox 2.0 Mac OS X Leopard
+      * MSIE 7.0 Windows XP SP2
+      * Firefox 2.0 Windows XP SP2
+  * *Flash Player 9*
 
 = Installation =
 
