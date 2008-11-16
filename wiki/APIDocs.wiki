@@ -71,7 +71,7 @@ only the JPEG compression.  The default is 90.
 webcam.set_quality( 90 );
 }}}
 
-== webcam.set_shutter_sound( ENABLED, [URL] ); ==
+== webcam.set_shutter_sound( ENABLED, URL ); ==
 
 This allows you to enable or disable the "shutter" sound effect that 
 the Flash movie makes when a snapshot is taken.  Pass in a boolean
