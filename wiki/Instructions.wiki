@@ -16,7 +16,7 @@ tell the Flash movie what to do from your own code.
     * Tested on:
       * Safari 3.0 Mac OS X Leopard
       * Firefox 2.0 Mac OS X Leopard
-      * MSIE 7.0 Windows XP SP2
+      * MSIE 6.0, 7.0 Windows XP SP2
       * Firefox 2.0 Windows XP SP2
       * Chrome 0.3 Beta Windows XP SP2
   * *Flash Player 9 & 10*
