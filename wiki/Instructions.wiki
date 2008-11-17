@@ -18,7 +18,8 @@ tell the Flash movie what to do from your own code.
       * Firefox 2.0 Mac OS X Leopard
       * MSIE 7.0 Windows XP SP2
       * Firefox 2.0 Windows XP SP2
-  * *Flash Player 9*
+      * Chrome 0.3 Beta Windows XP SP2
+  * *Flash Player 9 & 10*
 
 = Installation =
 
