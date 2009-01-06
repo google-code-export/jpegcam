@@ -130,3 +130,46 @@ which sets the default panel "tab" in the settings dialog:
 {{{
 <a href="javascript:void(webcam.configure('camera'))">Configure...</a>
 }}}
+
+== webcam.freeze(); ==
+
+*Optional, new in v1.0.4*.  This is not required if you use webcam.snap(),
+described above.
+	
+This captures an image from the webcam but does NOT upload it.
+Instead, the image is displayed "frozen" in the Flash movie, and the user 
+may take further action.  For example, you may provide separate "Upload"
+and "Reset" buttons to upload the frozen image and/or reset the camera.
+
+*Example:*
+
+{{{
+<a href="javascript:void(webcam.freeze())">Freeze</a>
+}}}
+
+== webcam.upload(); ==
+
+*Optional, new in v1.0.4*.  This is not required if you use webcam.snap(),
+described above.
+	
+This uploads the captured image to the server, previously frozen with
+`webcam.freeze()`.  This is provided as its own function so you can
+have separate "Capture" and "Upload" buttons for the user.
+
+*Example:*
+
+{{{
+<a href="javascript:void(webcam.upload())">Upload</a>
+}}}
+
+== webcam.reset(); ==
+
+*Optional, new in v1.0.4*.  This resets the frozen image, previously captured
+with webcam.freeze(), and restores the live webcam feed for further
+capturing.
+
+*Example:*
+
+{{{
+<a href="javascript:void(webcam.reset())">Reset</a>
+}}}
