@@ -177,3 +177,13 @@ capturing.
 {{{
 <a href="javascript:void(webcam.reset())">Reset</a>
 }}}
+
+== webcam.set_stealth( ENABLED ); ==
+
+*Optional, new in v1.0.9*.  This sets or disables "stealth" mode (defaults to disabled).  When enabled, this causes the image to be captured and uploaded without interrupting the video preview.  Meaning, the snapshot is not "frozen", but instead the webcam video continues to be played.  Using this mode you can, for example, capture and upload multiple snapshots at preset intervals.
+
+*Example:*
+
+{{{
+webcam.set_stealth( true );
+}}}
